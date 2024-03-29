@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+<body>
+    <h1>ABOUT US</h1>
+    <h2>What you can learn here?</h2>
+    <ul>
+        <li>programming</li>
+        <li>training</li>
+        <li>cybersecurity</li>
+    </ul> 
+    <h3>Wanna try? Write YES</h3>
+    <form method="post">
+        {% csrf_token %}
+        <div>
+            <label>Enter your answer</label>
+            <input type="text" name="user_answer" required>
+        </div>
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+</html>

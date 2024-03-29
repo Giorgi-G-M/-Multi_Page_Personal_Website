@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <h1>If you want to contact me, fill this out</h1>
+    <form method="post">
+        {% csrf_token %}
+        <div>
+            <label>Enter your name</label>
+            <input type="text" name="name" required/>
+        </div>
+        <div>
+            <label>Enter your email</label>
+            <input type="email" name="email" required/>
+        </div>
+        <div>
+            <label>Enter your password</label>
+            <input type="password" name="password" required/>
+        </div>
+        <input type="submit" value="SUBMIT"/>
+    </form>
+</body>
+</html>
